@@ -1,0 +1,78 @@
+/* static/css/style.css */
+
+/* Global styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.page-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: rgb(13, 13, 207);
+}
+
+/* Styles for snack_list.html */
+.snack-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.snack-item {
+    margin-bottom: 20px;
+}
+
+.snack-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.snack-name {
+    font-size: 24px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.snack-description {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Styles for snack_detail.html */
+.snack-details {
+    margin: 20px 0;
+}
+
+.snack-property {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+
+/* Styles for the snack_list.html buttons */
+.update-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.delete-btn {
+    background-color: #6c836a;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.create-btn {
+    background-color: #000000;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 25px;
+    }

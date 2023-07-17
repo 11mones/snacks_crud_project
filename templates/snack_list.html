@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="page-title">Our Snacks</h1>
+        <ul class="snack-list">
+            {% for snack in data %}
+                <li class="snack-item">
+                    <a href="{% url 'snack_details' snack.id %}" class="snack-link">
+                        <h2 class="snack-name">{{ snack.name }}</h2>
+                    </a>
+                    <div class="snack-options">
+                        <a href="{% url 'snack_update' snack.id %}" class="option-link update-btn">Update</a>
+                        <a href="{% url 'snack_delete' snack.id %}" class="option-link delete-btn">Delete</a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'snack_create' %}" class="option-link create-btn">Create New Snack</a>
+    </div>
+{% endblock %}
